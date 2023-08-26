@@ -44,13 +44,24 @@
         </p>
         <p style="margin-top: 35px;">
             <input type="text" id="name" placeholder="Your Name">
-            <a class="button" onclick="func()" href="">Submit</a>
+            <a class="button" id="btn" onclick="func1()">Submit</a>
         </p>
     </section>
     <section style="position: absolute;bottom: 15px;right: 20px;font-size: 17px;">
         Made by your <a style="color: red;" href="https://manas.cyberbuddy.one">Cyberbuddy</a>
     </section>
-
-    <script src="./main.js" />
+    <script>
+        function func1() {
+            let url = document.getElementById("name").value;
+            if (!url) {
+                alert("Please enter your name");
+                return;
+            }
+            document.getElementById("btn").href = "./Certificates/" + url + ".pdf";
+            document.getElementById("btn").download = "./Certificates/" + url + ".pdf";
+            document.getElementById("btn").click();
+        }
+    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
