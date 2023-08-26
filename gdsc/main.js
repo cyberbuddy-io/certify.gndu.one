@@ -5,7 +5,7 @@ function func() {
       return;
    }
 
-   document.getElementById("btn").href = "./certificates/" + url + ".pdf";
-   document.getElementById("btn").download = url + "-certificate.pdf";
+   document.getElementById("btn").href = "./Certificates/" + url + ".pdf";
+   document.getElementById("btn").download = url + ".pdf";
    document.getElementById("btn").click();
 }
