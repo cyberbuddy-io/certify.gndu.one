@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Web Orientation Certificates are here!!</title>
+    
+    <!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Here are your Certificates from the Web Orientation event hosted by GDSC GNDU Amristar">
+	<meta name=”robots” content=”noindex, nofollow”>
+	<meta name=”robots” content=”index, follow”>
+
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./Files/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./Files/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./Files/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome Library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- For SEO -->
+	<link rel="canonical" href="http://certify.gndu.one/">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Google Developer Student Clubs</h1>
+        <p>
+            <h5>Download your Certificates by entering your name below.</h5>
+            <h6>Please Note: Only those who attended and filled the form after the session will be able to download their certificates.</h6>
+        </p>
+        <p style="margin-top: 35px;">
+            <input type="text" id="name" placeholder="Your Name">
+            <a class="button" id="btn" onclick="func1()">Submit</a>
+        </p>
+    </section>
+    <section style="position: absolute;bottom: 15px;right: 20px;font-size: 17px;">
+        Made by your <a style="color: red;" href="https://manas.cyberbuddy.tech">Cyberbuddy</a>
+    </section>
+    <script>
+        function func1() {
+            let url = document.getElementById("name").value;
+            if (!url) {
+                alert("Please enter your name");
+                return;
+            }
+            document.getElementById("btn").href = "./Certificates/" + url + ".pdf";
+            document.getElementById("btn").download = "./Certificates/" + url + ".pdf";
+            document.getElementById("btn").click();
+        }
+    </script>
+    <script src="./main.js"></script>
+</body>
+</html>
