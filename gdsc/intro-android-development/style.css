@@ -18,7 +18,7 @@
 body {
   width: 100%;
   height: 100vh;
-  padding-top: 70px;
+  padding-top: 60px;
   background-image: url("./Files/bg.png");
   background-size: cover;
   background-position: center center;
@@ -40,9 +40,9 @@ a.button:active {
 }
 
 .button {
-  width: 12em;
-  height: 1em;
-  padding: 1em;
+  width: auto;
+  height: 3em;
+  padding: 10px 15px;
   background-color: salmon;
   cursor: pointer;
   position: relative;
@@ -73,11 +73,30 @@ a.button:active {
   width: 80%;
 }
 
-@media (max-width: 766px) {
+.btns {
+  display: inline-flex;
+  justify-content: left;
+  gap: 20px 0;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 990px) {
   .button {
     position: relative;
     top: 40px;
     margin-left: 0px;
+  }
+
+  .btns {
+    zoom: 0.9;
+    gap: 22px;
+  }
+
+  .btns a:not(:nth-child(1)) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
   }
 }
 
@@ -143,4 +162,17 @@ a.button:active {
 .option .option-text {
   font-size: 18px;
   color: #333;
+}
+
+
+.alert {
+  position: fixed;
+  right: 20px;
+  max-width: 400px;
+  min-width: 250px;
+  top: 30px;
+}
+
+@media (min-width: 768px) {
+  
 }

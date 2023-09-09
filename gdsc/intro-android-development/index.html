@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Your Android Developement Introduction Certificates are here!!</title>
-    
+
     <!-- Meta Tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Here are your Certificates from the Android Developement Introduction Certificates event hosted by Algozenith GNDU Amristar">
-	<meta name=”robots” content=”noindex, nofollow”>
-	<meta name=”robots” content=”index, follow”>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Here are your Certificates from the Android Developement Introduction Certificates event hosted by Algozenith GNDU Amristar">
+    <meta name=”robots” content=”noindex, nofollow”>
+    <meta name=”robots” content=”index, follow”>
 
     <!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="./Files/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./Files/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./Files/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Files/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <!-- Font Awesome Library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<!-- For SEO -->
-	<link rel="canonical" href="http://certify.gndu.one/">
+    <!-- For SEO -->
+    <link rel="canonical" href="http://certify.gndu.one/">
 
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body class="example">
-    <section class="container" style="min-height: 80vh;height: auto;padding-bottom: 100px;">
-        <h1>Google Developer Student Clubs</h1>
+    <div class="alert alert-primary alert-dismissible collapse" role="alert">
+        <h6 style="margin: 0;"></h6>
+        <button style="padding: 10px;" onclick="$('.alert').hide('fade');" type="button" class="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <section class="container" style="min-height: 75vh;height: auto;padding-bottom: 80px;">
+        <h1 style="font-size: 30px;">Google Developer Student Clubs</h1>
         <p>
-            <h5>Download your Certificates by entering your name below.</h5>
-            <h6>Please Note: Only those who attended and filled the form will be able to download their certificates.</h6>
+        <h5 style="font-size: 23px;">Download your Certificates by entering your name below.</h5>
+        <h6 style="font-size: 18px;"><b>Please Note:</b> Only those who attended and filled the form will be able to
+            download their certificates.</h6>
         </p>
         <div style="margin-top: 40px;">
             <div class="select-menu">
@@ -55,7 +70,11 @@
                     </li> -->
                 </ul>
             </div>
-            <a class="button" id="btn" onclick="func1()">Submit</a>
+            <div class="btns">
+                <a class="button" id="btn1" onclick="viewCerti()"> <i class="bi bi-eye"></i> View</a>
+                <a class="button" id="btn2" onclick="downloadCerti()"> <i class="bi bi-download"></i> Download</a>
+                <a class="button" id="btn3" onclick="copyCerti()"><i class="bi bi-clipboard"></i> Copy Link</a>
+            </div>
         </div>
     </section>
     <section style="font-size: 17px;padding: 20px;text-align: right;">
@@ -75,4 +94,5 @@
     </script>
     <script src="./main.js"></script>
 </body>
+
 </html>
