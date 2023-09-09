@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Road to Computer Science Certificates are here!!</title>
+    
+    <!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Here are your Certificates from the Road to Computer Science Certificates event hosted by Algozenith GNDU Amristar">
+	<meta name=”robots” content=”noindex, nofollow”>
+	<meta name=”robots” content=”index, follow”>
+
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./Files/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./Files/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./Files/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome Library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- For SEO -->
+	<link rel="canonical" href="http://certify.gndu.one/">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="example">
+    <section class="container" style="min-height: 80vh;height: auto;padding-bottom: 100px;">
+        <h1>Algozenith GNDU Chapter</h1>
+        <p>
+            <h5>Download your Certificates by entering your name below.</h5>
+            <h6>Please Note: Only those who attended and filled the form will be able to download their certificates.</h6>
+        </p>
+        <div style="margin-top: 40px;">
+            <div class="select-menu">
+                <div class="select-btn">
+                    <span class="sBtn-text">Select your name</span>
+                    <i class="bx bx-chevron-down">↓</i>
+                </div>
+                <ul class="options">
+                    <!-- <li class="option">
+                        <i class="bx bxl-twitter" style="color: #1DA1F2;"></i>
+                        <span class="option-text">Twitter</span>
+                    </li> -->
+                </ul>
+            </div>
+            <a class="button" id="btn" onclick="func1()">Submit</a>
+        </div>
+    </section>
+    <section style="font-size: 17px;padding: 20px;text-align: right;">
+        Made by your <a style="color: red;" href="https://manas.cyberbuddy.live">Cyberbuddy</a>
+    </section>
+    <script>
+        function func1() {
+            let url = document.getElementById("name").value;
+            if (!url) {
+                alert("Please enter your name");
+                return;
+            }
+            document.getElementById("btn").href = "./Certificates/" + url + ".pdf";
+            document.getElementById("btn").download = "./Certificates/" + url + ".pdf";
+            document.getElementById("btn").click();
+        }
+    </script>
+    <script src="./main.js"></script>
+</body>
+</html>

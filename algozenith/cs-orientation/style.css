@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+* {
+  font-family: "Montserrat", monospace;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 70px;
+  background-image: url("./Files/bg.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a.button:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a.button:active {
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  width: 12em;
+  height: 1em;
+  padding: 1em;
+  background-color: salmon;
+  cursor: pointer;
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  top: 0;
+  box-shadow: 8px 8px 0px red;
+  text-align: center;
+  font-family: "Inconsolata", sans-serif;
+  transition: all 0.25s;
+  margin-left: 20px;
+}
+
+.button:hover {
+  bottom: -4px;
+  right: -4px;
+  box-shadow: 4px 4px 0px red;
+}
+
+.button:active {
+  bottom: -7px;
+  right: -7px;
+  box-shadow: 1px 1px 0px red;
+}
+
+.container input {
+  padding: 10px 5px;
+  width: 80%;
+}
+
+@media (max-width: 766px) {
+  .button {
+    position: relative;
+    top: 40px;
+    margin-left: 0px;
+  }
+}
+
+/* ===== Google Font Import - Poppins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+.select-menu {
+  width: 500px;
+  max-width: 100%;
+  display: inline-block;
+  /* margin: 140px auto; */
+}
+.select-menu .select-btn {
+  display: flex;
+  height: 55px;
+  background: #fff;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.select-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+  font-style: normal;
+}
+.select-menu.active .select-btn i {
+  transform: rotate(-180deg);
+}
+.select-menu .options {
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.select-menu.active .options {
+  display: block;
+  height: 400px;
+  overflow-y: scroll;
+}
+.options .option {
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background: #fff;
+}
+.options .option:hover {
+  background: #f2f2f2;
+}
+.option i {
+  font-size: 25px;
+  margin-right: 12px;
+}
+.option .option-text {
+  font-size: 18px;
+  color: #333;
+}
