@@ -1,23 +1,3 @@
-function capitalizeWords(str) {
-   // Split the string into an array of words
-   const words = str.split(' ');
-
-   // Capitalize the first letter of each word and join them back together
-   const capitalizedWords = words.map(word => {
-      // Ensure the word is not an empty string
-      if (word.length > 0) {
-         return word[0].toUpperCase() + word.slice(1);
-      } else {
-         return '';
-      }
-   });
-
-   // Join the capitalized words with a space to form the final string
-   const result = capitalizedWords.join(' ');
-
-   return result;
-}
-
 function func1() {
    let url = document.querySelector(".sBtn-text").innerHTML;
    if (!url) {
@@ -25,14 +5,57 @@ function func1() {
       return;
    }
 
-   url = capitalizeWords(url);
-
    document.getElementById("btn").href = "./Certificates/" + url + ".pdf";
    document.getElementById("btn").download = "./Certificates/" + url + ".pdf";
    document.getElementById("btn").click();
 }
 
-let names = ["aditya dadwal", "saksham", "bhavishya", "sayam"];
+let names = [
+   "Jaideep Singh",
+   "Sahil Chabra",
+   "Lavuluri Adarsh Royal",
+   "Vanshi Puri",
+   "Vishal Yadav",
+   "Tanish Vansil",
+   "Shaurya khosla",
+   "Jasleen Kaur",
+   "Aakriti Mathur",
+   "Akshita raina",
+   "Manoj Lakhera",
+   "Sneha Goswami",
+   "Naman Dhingra",
+   "Kartik Sharma",
+   "Vimanpreet kaur",
+   "Kanan mahajan",
+   "Jashan khokhar",
+   "Md Yunus",
+   "Kirandeep Kaur",
+   "parneet kaur",
+   "Sarthak Mittal",
+   "Sahibjot Singh",
+   "Kunal Khanna",
+   "Vishnu Pratap Singh",
+   "Sachin singh",
+   "Rohain Singh Aulakh",
+   "Samarjeet Singh",
+   "Sourav Pathania",
+   "Ashwath Soni",
+   "Manseerat Kaur",
+   "Harshleen Kaur",
+   "Yuvika dabur",
+   "Priyansh",
+   "Jatin kumar",
+   "Ganak Aggarwal",
+   "Mahima Mahajan",
+   "Parth Bhagat",
+   "Aditya dadwal",
+   "Harshwardhan Singh",
+   "Harmanmeet Kaur",
+   "Roushni Sharma",
+   "Vasu Jindal"
+]
+
+names.sort();
 
 function createDrop(name) {
    const li = document.createElement("li");
