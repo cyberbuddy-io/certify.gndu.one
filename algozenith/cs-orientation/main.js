@@ -22,6 +22,8 @@ function downloadCerti() {
       alertBoot("Please select your name");
       return;
    }
+
+   document.getElementById("btn2").href = "./Certificates/" + url + ".pdf";
    document.getElementById("btn2").download = "./Certificates/" + url + ".pdf";
    document.getElementById("btn2").click();
 }
@@ -32,7 +34,7 @@ function copyCerti() {
       alertBoot("Please select your name");
       return;
    }
-   navigator.clipboard.writeText(location.href + "./Certificates/" + url + ".pdf");
+   navigator.clipboard.writeText(location.href + "/Certificates/" + url + ".pdf");
    alertBoot("Link Copied to clipboard");
 }
 
