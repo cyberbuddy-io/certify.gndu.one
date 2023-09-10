@@ -38,50 +38,7 @@ function copyCerti() {
    alertBoot("Link Copied to clipboard");
 }
 
-let names = [
-   "Jaideep Singh",
-   "Sahil Chabra",
-   "Lavuluri Adarsh Royal",
-   "Vanshi Puri",
-   "Vishal Yadav",
-   "Tanish Vansil",
-   "Shaurya khosla",
-   "Jasleen Kaur",
-   "Aakriti Mathur",
-   "Akshita raina",
-   "Manoj Lakhera",
-   "Sneha Goswami",
-   "Naman Dhingra",
-   "Kartik Sharma",
-   "Vimanpreet kaur",
-   "Kanan mahajan",
-   "Jashan khokhar",
-   "Md Yunus",
-   "Kirandeep Kaur",
-   "parneet kaur",
-   "Sarthak Mittal",
-   "Sahibjot Singh",
-   "Kunal Khanna",
-   "Vishnu Pratap Singh",
-   "Sachin singh",
-   "Rohain Singh Aulakh",
-   "Samarjeet Singh",
-   "Sourav Pathania",
-   "Ashwath Soni",
-   "Manseerat Kaur",
-   "Harshleen Kaur",
-   "Yuvika dabur",
-   "Priyansh",
-   "Jatin kumar",
-   "Ganak Aggarwal",
-   "Mahima Mahajan",
-   "Parth Bhagat",
-   "Aditya dadwal",
-   "Harshwardhan Singh",
-   "Harmanmeet Kaur",
-   "Roushni Sharma",
-   "Vasu Jindal"
-]
+let names = ["Aanchal", "Aaryan Sharda", "Aarzoo", "Aastha", "Abhay Kumar", "Abhitesh Singh", "Abit Singh", "Aditi Kapoor", "Agam deep", "Agrim Vij", "Akansha", "Akshad", "Akshat Mehta", "Akshita raina", "Akshita Thakur", "Aman Virk", "Anantvir Singh", "Anchal", "Aniket Singh", "Ansh Arora", "Anshika Gupta", "Archi Mahajan", "ARJIT RANDEV", "Aryan Verma", "Ashwath Soni", "Bandeep kaur", "bhavishya", "Bhavisya", "Bhawik Kharod", "Bhomik khanna", "Bhumesh Mahajan", "Daman Jeet Kaur", "Danish", "Debashis Nahak", "Deepakshi", "Deepali", "Dhruv Sharma", "Diksha sharma", "Dilraj Singh", "Divanshi Sahni", "Divyatejpal singh", "Divye khanna", "Diya", "Diya behal", "Ganak Aggarwal", "Gautam chalotra", "Gopesh Mahajan", "Gouri", "GUNEET KAUR", "Gurleen Kaur", "Harashish Singh Rohewal", "Hardik Aggarwal", "Hargun Singh", "Harmanjit Singh", "Harmanmeet Kaur", "Harmanpal Singh", "Harpreet kaur", "Harsh kumar", "Harshita vashisht", "Harsimran Kaur", "Himanshi Malhotra", "Hiteshi Joshi", "Inderjit Singh", "Ishita Swaroop Sood", "Jagjeet Singh", "Jagroop kaur", "Jaskaran Singh", "JASKIRAT KAUR", "Jaskirat Singh", "Jasleen Kaur", "Jasmeen", "Jatin", "Jatin kumar", "Jatinder Singh", "Jeevika gupta", "Jessica kaur", "Jobanpreet Kaur", "Jujhar Singh", "Jyoti kumari", "Kanan mahajan", "Kanishka Vashisht", "Karan Mehta", "Karman", "Kartik Sharma", "KASAK AGGARWAL", "Kashish", "Khurram bhat", "Khushi Gupta", "Khushi Ram", "Khushmeet kaur", "Khushpreet Singh", "Khyati Arora", "Kirandeep Kaur", "Kiranveer Singh Randhawa", "Komalpreet kaur", "Krishna Sharma", "Kunal Khanna", "Lavisha Mahajan", "Lovepreet Singh", "Lukarta", "Madhav Sharma", "Manan Lamba", "Manas Gupta", "Manasvi Sharma", "Manish kumar", "Manmohit Singh", "Manoj Lakhera", "Manreet kaur", "Mansha syal", "Mansirat kaur", "Mantej Handa", "Manya Verma", "MD YUNUS", "Mehak garg", "Mehak Grover", "Mehakpreet kaur", "Mishika", "Mohan Raichand", "Mridul sharma", "Muskan sharma", "Naman Dhingra", "Namya Dutta", "Navdeep Sumbria", "Navi Kumar", "Navkirat Singh", "Navneet Kaur Saini", "Navraj Singh", "Navroz Singh", "Nikhil", "Nikhil Garg", "Nimardeep Kaur", "Nimratjot kaur", "Nitish", "Nivedika", "Paras Mahajan", "Parmanand", "Parth Bhagat", "Parth kohli", "Piyush Sharma", "Poonam", "Poonam Mehan", "Prachi", "Pragati Sharma", "Prakriti Sharma", "Pratham Mahajan", "Pratham Suri", "Pratibha Mahajan", "Preet Bhagria", "Preeti", "Preetinder Kaur", "Prem Gill", "Priya Sidhu", "Priyansh", "Priyanshu", "Rabkirat Kaur", "Raghav Bhardwaj", "Raghav Sharma", "Rahul Wadhan", "Rajwinder Kaur", "Rana Thakur", "Rashmeet Kaur", "Ridhima bhatti", "Ridhima Sharma", "Rishav Singh", "Ritika", "Ritvik", "Ritvik Sarswat", "Riya Arora", "Roushni Sharma", "Sahibjot Singh", "sahil", "Sahil Chabra", "Saksham", "Saksham Arora", "Samridhi Sharma", "Sandeep badhan", "Sanya Arora", "Sapna", "Sarah", "Sarthak khanna", "Sayam Sharma", "Shahnaj Siddique", "Shaina Soni", "Shaurya khosla", "Shivani Emanuel", "Shreya Sharma", "Shruti", "Shubham khosla", "Shubhdeep Kaur", "Simardeep kaur", "Simarpreet Kaur", "Simran", "Sneha Goswami", "Sonali", "Sourabh Awasthi", "Stuti", "Suhani Thakur", "Sujal Mahajan", "Sumedha Sharma", "Sunidhi Sharma", "Suraj Singh", "Surbhi", "Sushila", "Tania", "Tanish Bhatia", "Tanish Vansil", "Tanu Sharma", "Tanveer kaur", "Tanya", "Tanya Kalia", "Tushar", "Vania", "Vanshi Puri", "Vanshika Saini", "Varun Kumar", "Vidhi Kashyap", "Vimanpreet Kaur", "Vishal Yadav", "Yuvika dabur", "Yuvraj Bhandari", "Yuvraj Chopra", "Tanishka"];
 
 names.sort();
 
@@ -114,11 +71,11 @@ const optionMenu = document.querySelector(".select-menu"),
    selectBtn = optionMenu.querySelector(".select-btn"),
    options = optionMenu.querySelectorAll(".option"),
    sBtn_text = optionMenu.querySelector(".sBtn-text");
-   selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
-   options.forEach(option => {
-      option.addEventListener("click", () => {
-         let selectedOption = option.querySelector(".option-text").innerText;
-         sBtn_text.innerText = selectedOption;
-         optionMenu.classList.remove("active");
-      });
+selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+options.forEach(option => {
+   option.addEventListener("click", () => {
+      let selectedOption = option.querySelector(".option-text").innerText;
+      sBtn_text.innerText = selectedOption;
+      optionMenu.classList.remove("active");
    });
+});
